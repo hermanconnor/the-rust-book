@@ -56,5 +56,6 @@ fn five() -> i32 {
 }
 
 fn plus_one(x: i32) -> i32 {
+    // placing a semicolon after will cause an error
     x + 1
 }
