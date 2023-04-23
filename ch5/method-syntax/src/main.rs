@@ -11,6 +11,11 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    // we can choose to give a method the same name as one of the struct’s fields
+    fn width(&self) -> bool {
+        self.width > 0
+    }
 }
 
 fn main() {
@@ -23,4 +28,8 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         rect1.area()
     );
+
+    if rect1.width() {
+        println!("The rectangle has a nonzero width; it is {}", rect1.width)
+    }
 }
